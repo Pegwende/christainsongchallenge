@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import 'bulma/css/bulma.min.css';
 import Modal from './Components/Modal'
+import "./App.css"
 
 const App = () => {
 
@@ -32,22 +33,49 @@ const App = () => {
     <>
 
           < Modal theWord = {theWord} />
-        <div>
+        <div className="m-1">
 
-            <div>
-                <h1>Game</h1>
-                <h1>improvised Worship Challenge</h1>
+            <div class="backImg p-6 mb-6">
+                <h1 className="title is-1 has-text-centered">Game</h1>
+            </div>
+            <h1 className = 'title is-3 mt-4 has-text-centered'>improvised Worship Challenge</h1>
+            <figure class="image is-3by1">
+               <img src="https://i.imgur.com/56R43jI.png" alt=''/>
+            </figure>
+
+            <div class="card m-6">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    DESCRIPTION!!!
+                  </p>
+                  <button class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    This Game consists of improvising a christian worship songs base on the 
+                    word generated when clicked on the button. 
+                    <p>NOTE: Only Christian music.🎶</p>
+
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <p class="card-footer-item">GOOD LUCK!!!</p>
+                </footer>
+              </div>
+
+
+            <div class="buttons m-6 is-centered">
+            <button class="button is-link is-rounded is-medium has-text-centered "  onClick={handleButtom}> Clicked for new Word </button>
             </div>
 
-            {theWord}
-            <div class="buttons">
-            <button class="button is-danger"  onClick={handleButtom}> Clicked for new Word </button>
-            </div>
-
             <div>
-              <footer class="footer">
-                <div class="content has-text-centered is-primary"> 
-                  <p> Inspired by: Papa Mathieu Zampaligre | Created by: Pegwende P Zabsore  </p>
+              <footer class="footer has-background-grey">
+                <div class="content has-text-centered"> 
+                  <p class='has-text-primary-light' > Inspired by: Papa Mathieu Zampaligre | Created by: Pegwende P Zabsore  </p>
                 </div>
               </footer>
             </div>
