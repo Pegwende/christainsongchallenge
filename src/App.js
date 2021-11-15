@@ -19,11 +19,6 @@ const App = () => {
     }
   }
 
-  const closeModal = () => {
-    document.querySelector('.modal').classList.remove('is-active')
-  }
-
-
 
   const openModal = () => {
     document.querySelector('.modal').classList.add('is-active')
