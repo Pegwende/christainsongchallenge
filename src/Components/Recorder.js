@@ -51,7 +51,7 @@ class Recorder extends React.Component {
 
     return (
         <>
-            <div className="is-flex-direction-column m-0 b-0 p-0">
+            <div className="is-flex-direction-column">
                 <div id="recorder">
                     <AudioReactRecorder
                     state={recordState}

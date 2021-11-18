@@ -11,8 +11,8 @@ console.log(props.theWord)
             <>
                 <div class="modal">
                     <div onClick={closeModal} class="modal-background"></div>
-                    <div class="modal-content has-background-white has-text-centered title is-1 pt-6 pb-6">
-                            <p className="title is-1"> |||〉 {props.theWord} 〈||| </p>
+                    <div id="modal" class="modal-content has-background-white has-text-centered title is-1 mx-1 px-1 py-6 ">
+                            <p className="title is-1"> 〉〉〉 {props.theWord} 〈〈〈 </p>
                             < Recorder  />
                             <button className="button is-ligth m-3" id='stop' onClick={props.handleButtom}>
                                Next Word
