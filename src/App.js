@@ -68,9 +68,10 @@ const App = () => {
             </div>
 
             <div>
-              <footer class="footer has-background-grey">
+              <footer id='foot' class="footer has-background-grey is-small">
                 <div class="content has-text-centered"> 
-                  <p class='has-text-primary-light' > Inspired by: Papa Mathieu Zampaligre | Created by: Pegwende P Zabsore  </p>
+                  <p class='has-text-primary-light' ><strong>Inspired by:</strong> Papa Mathieu Zampaligre <strong>|</strong> <strong>Created by:</strong> Pegwende P Zabsore  </p>
+                  <p className="color has-text-danger-dark pb-3rem pt-3 title is-1">Jesus ❤️ you</p>
                 </div>
               </footer>
             </div>
