@@ -6,7 +6,7 @@ import "./App.css"
 const App = () => {
 
   const [index, setIndex] = useState(0)
-  const words = ['', 'Faith', 'Wisdom', 'Perseverance', 'Commandment', 'Creation', 'the Cross', 'Eden', 'The fall', 'The flood', 'Gospel', 'Redemption', 'Resurrection', 'Salvation', 'Second Coming']
+  const words = ['', 'Faith', 'Wisdom', 'Perseverance', 'Commandment', 'Creation', 'the Cross', 'Eden', 'The fall', 'The flood', 'Gospel', 'Redemption', 'Resurrection', 'Salvation', 'Second Coming', 'Love']
   let theWord=words[index]
 
   const handleButtom = () => {
@@ -26,8 +26,8 @@ const App = () => {
 
   return (
     <>
-
-          < Modal theWord = {theWord} />
+          
+          < Modal theWord = {theWord} handleButtom={handleButtom} />
         <div className="m-1">
 
             <div class="backImg p-6 mb-6">
@@ -64,7 +64,7 @@ const App = () => {
 
 
             <div class="buttons m-6 is-centered">
-            <button class="button is-link is-rounded is-medium has-text-centered "  onClick={handleButtom}> Clicked for new Word </button>
+            <button class="button is-link is-rounded is-medium has-text-centered "  onClick={handleButtom}> Let's Get Started </button>
             </div>
 
             <div>
